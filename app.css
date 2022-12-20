@@ -1,129 +1,138 @@
-  * {
-    box-sizing: border-box;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&display=swap");
 
-  html {
-    font-family: sans-serif;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-  }
+html {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
 
-  label,
-  input,
-  textarea {
-    display: block;
-    margin: 0.5rem 0;
-  }
+body {
+  margin: 0;
+}
+.header {
+  display: grid;
+  place-content: center;
+  max-height: 4rem;
+  padding: 1rem;
+  background-color: #eee;
+  color: #354259;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.26);
 
-  label {
-    font-weight: bold;
-  }
+}
+label,
+input,
+textarea {
+  display: block;
+  margin: 0.5rem 0;
+}
 
-  input,
-  textarea {
-    font: inherit;
-    padding: 0.2rem 0.4rem;
-    width: 100%;
-    max-width: 30rem;
-    border: 1px solid #ccc;
-  }
+label {
+  font-weight: bold;
+}
 
-  input:focus,
-  textarea:focus {
-    outline: none;
-    background: #fff5f9;
-  }
+input,
+textarea {
+  font: inherit;
+  padding: 0.2rem 0.4rem;
+  width: 100%;
+  max-width: 30rem;
+  border: 1px solid #ccc;
+}
 
-  button {
-    font: inherit;
-    background: #341366;
-    border: 1px solid #341366;
-    cursor: pointer;
-    color: white;
-    padding: 0.75rem 1rem;
-    transition: all 200ms ease;
-  }
+input:focus,
+textarea:focus {
+  outline: none;
+}
 
-  button:focus {
-    outline: none;
-  }
+button {
+  font: inherit;
+  background: #65647C;
+  border: 1px solid #65647C;
+  cursor: pointer;
+  color: white;
+  padding: 0.75rem 1rem;
+  transition: all 200ms ease;
+}
 
-  button:hover,
-  button:active {
-    background: #a80041;
-    border-color: #a80041;
-  }
+button:focus {
+  outline: none;
+}
 
-  .projects {
-    margin: 1rem;
-    border: 1px solid #341366;
-  }
+button:hover,
+button:active {
+  background: #5a596c;
+  border-color: #5a596c;
+}
 
-  .projects header {
-    background: #ff0062;
-    height: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
+.projects {
+  margin: 1rem;
+  border: 1px solid #FF9F9F;
+}
 
-  #finished-projects {
-    border-color: #0044ff;
-  }
+.projects header {
+  background: #FF9F9F;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  #finished-projects header {
-    background: #0044ff;
-  }
+#finished-projects {
+  border-color: #7895B2;
+}
 
-  .projects h2 {
-    margin: 0;
-    color: white;
-  }
+#finished-projects header {
+  background: #7895B2;
+}
 
-  .projects ul {
-    list-style: none;
-    margin: 0;
-    padding: 1rem;
-  }
+.projects h2 {
+  margin: 0;
+  color: white;
+}
 
-  .projects li {
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
-    padding: 1rem;
-    margin: 1rem;
-    background-color: #fff;
-  }
+.projects ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
 
-  .projects li h2 {
-    color: #ff0062;
-    margin: 0.5rem 0;
-  }
+.projects li {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+}
 
-  #finished-projects li h2 {
-    color: #0044ff;
-  }
+.projects li h2 {
+  color: #E97777;
+  margin: 0.5rem 0;
+}
 
-  .projects li h3 {
-    color: #575757;
-    font-size: 1rem;
-  }
+#finished-projects li h2 {
+  color: #554994;
+}
 
-  .project li p {
-    margin: 0;
-  }
+.projects li h3 {
+  color: #575757;
+  font-size: 1rem;
+}
 
-  .droppable {
-    background: #ffe3ee;
-  }
+.project li p {
+  margin: 0;
+}
 
-  #finished-projects .droppable {
-    background: #d6e1ff;
-  }
+.droppable {
+  background: #ffe3ee;
+}
 
-  #user-input {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ff0062;
-    background: #f7f7f7;
-  }
+#finished-projects .droppable {
+  background: #d6e1ff;
+}
+
+#user-input {
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.26);
+}
